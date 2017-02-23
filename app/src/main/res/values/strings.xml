@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">My Test</string>
-    <string name="MyStr">Traffic Sign</string>
+
+    <string name="title">Traffic Sign</string>
+    <string name="test">ทดสอบ</string>
+    <string name="about_me">About Me</string>
 
 
 </resources>

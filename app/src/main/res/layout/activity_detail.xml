@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apptest.alice.mytest.Detail"
+    android:background="@drawable/bg8">
+
+    <ImageView
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        app:srcCompat="@drawable/traffic_01"
+        android:id="@+id/imvTrafficDetail"
+        android:layout_below="@+id/txtTitleDetail"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickBack"
+        android:id="@+id/btnBack"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imvTrafficDetail"
+        android:layout_above="@+id/btnBack"
+        android:layout_margin="@dimen/my_margin"
+        android:background="#c8ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetail"
+                android:textSize="@dimen/h2" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitleDetail"
+        android:textSize="@dimen/h1"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my_margin"
+        tools:textColor="@android:color/holo_orange_light" />
+</RelativeLayout>
