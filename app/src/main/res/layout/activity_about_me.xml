@@ -70,6 +70,7 @@
             android:id="@+id/textView6"
             android:textSize="@dimen/h3"
             android:paddingTop="@dimen/my_margin" />
+
     </LinearLayout>
 
 </RelativeLayout>
