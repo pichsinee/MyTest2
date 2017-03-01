@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,12 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickAboutMe(View view) {
 
+        //Toast.makeText(getApplicationContext(), "Hello!", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this, AboutMe.class);
         startActivity(intent);
     }   //method clickAboutMe
 
     public void clickMoreInfo(View view) {
 
+        //สร้าง intent สำหรับเรียกดูออบเจ็ค
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));
         startActivity(intent);
