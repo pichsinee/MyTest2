@@ -4,6 +4,7 @@
     <string name="title">Traffic Sign</string>
     <string name="test">ทดสอบ</string>
     <string name="about_me">About Me</string>
+    <string name="more_info">More Info.</string>
 
 
 </resources>

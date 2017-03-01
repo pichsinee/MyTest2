@@ -61,10 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickAboutMe(View view) {
 
-        //Intent intent = new Intent(Intent.ACTION_VIEW);
-       // intent.setData(Uri.parse("http://www.dusit.ac.th"));
         Intent intent = new Intent(MainActivity.this, AboutMe.class);
         startActivity(intent);
     }   //method clickAboutMe
+
+    public void clickMoreInfo(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));
+        startActivity(intent);
+    } //method clickMoreInfo
 
 }   // Main Class
