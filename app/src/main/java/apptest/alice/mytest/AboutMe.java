@@ -1,10 +1,13 @@
 package apptest.alice.mytest;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AboutMe extends AppCompatActivity {
@@ -48,6 +51,17 @@ public class AboutMe extends AppCompatActivity {
                 //ค่าจะเป็น True เมื่อใช้งาน onLongClick และเป็น False เมื่อไม่ใช้งาน
                 // ดังนั้น การกำหนดค่าที่จะ Return ใน onLongClick นั้นมีผลกับ onClick ด้วย โดยที่เมื่อเป็น False จะทำงานซ้อนกันทั้ง onClick และ onLongClick แต่ถ้าเมื่อเป็น True จะทำให้ onClick ทำงานไม่ซ้อนกันนั่นเอง
                 return true;
+            }
+        });
+
+        //Facebook onClick
+        TextView textView = (TextView) findViewById(R.id.txtFacebook);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.facebook.com/Aj.Aom"));
+                startActivity(intent);
             }
         });
 

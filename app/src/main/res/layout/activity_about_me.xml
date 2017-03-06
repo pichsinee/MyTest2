@@ -37,40 +37,55 @@
         android:id="@+id/button2"
         android:layout_alignParentBottom="true" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/button2"
         android:layout_below="@+id/imvMyPic"
-        android:layout_marginBottom="@dimen/my_margin"
         android:layout_margin="@dimen/my_margin"
         android:background="#c8ffffff">
 
-        <TextView
-            android:text="@string/my_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:textSize="@dimen/h3"
-            android:paddingTop="@dimen/my_margin" />
-
-        <TextView
-            android:text="@string/my_workplace"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView5"
-            android:textSize="@dimen/h3"
-            android:paddingTop="@dimen/my_margin" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:text="@string/my_mail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView6"
-            android:textSize="@dimen/h3"
-            android:paddingTop="@dimen/my_margin" />
+            <TextView
+                android:text="@string/my_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="@dimen/h3"
+                android:paddingTop="@dimen/my_margin"
+                android:paddingLeft="@dimen/my_margin" />
 
-    </LinearLayout>
+            <TextView
+                android:text="@string/my_workplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textSize="@dimen/h3"
+                android:paddingTop="@dimen/my_margin"
+                android:paddingLeft="@dimen/my_margin" />
+
+            <TextView
+                android:text="@string/my_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textSize="@dimen/h3"
+                android:paddingTop="@dimen/my_margin"
+                android:paddingLeft="@dimen/my_margin" />
+
+            <TextView
+                android:text="@string/my_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFacebook"
+                android:paddingTop="@dimen/my_margin"
+                android:textSize="@dimen/h3"
+                android:paddingLeft="@dimen/my_margin" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

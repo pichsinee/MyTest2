@@ -10,16 +10,15 @@
         android:theme="@style/AppTheme">
         <!-- Splash Activity -->
         <activity android:name=".SplashScreen">
+        </activity>
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Main Activity -->
-        <activity android:name=".MainActivity">
-
         </activity>
         <activity android:name=".Detail" />
         <activity android:name=".AboutMe" />
