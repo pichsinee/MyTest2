@@ -55,13 +55,24 @@ public class AboutMe extends AppCompatActivity {
         });
 
         //Facebook onClick
-        TextView textView = (TextView) findViewById(R.id.txtFacebook);
-        textView.setOnClickListener(new View.OnClickListener() {
+        TextView facebookTextView = (TextView) findViewById(R.id.txtFacebook);
+        facebookTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://www.facebook.com/Aj.Aom"));
-                startActivity(intent);
+                Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
+                facebookIntent.setData(Uri.parse("https://www.facebook.com/Aj.Aom"));
+                startActivity(facebookIntent);
+            }
+        });
+
+        //Phone onClick
+        TextView phoneTextView = (TextView) findViewById(R.id.txtPhone);
+        phoneTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+                phoneIntent.setData(Uri.parse("tel:022445000"));
+                startActivity(phoneIntent);
             }
         });
 

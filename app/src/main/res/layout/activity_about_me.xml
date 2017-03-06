@@ -85,6 +85,15 @@
                 android:paddingTop="@dimen/my_margin"
                 android:textSize="@dimen/h3"
                 android:paddingLeft="@dimen/my_margin" />
+
+            <TextView
+                android:text="@string/my_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPhone"
+                android:paddingLeft="@dimen/my_margin"
+                android:textSize="@dimen/h3"
+                android:paddingTop="@dimen/my_margin" />
         </LinearLayout>
     </ScrollView>
 
